@@ -1,0 +1,216 @@
+<!-- DON'T LOOK AT THIS, LOOK AT THE COOKIES!! -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/zfv5iaf.css">
+
+    <title>Do You Want a Cookie?</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Alert for mobile devices asking that they use a computer -->
+    <div class="alert">Sorry! This website only works on a desktop.</div>
+
+    <!-- Introduction pages, timed events (js file has the rest) -->
+    <div class="introduction">
+        <div id="buttonContainer">
+            <p>I VALUE YOUR PRIVACY.</p>
+            <p>WILL YOU ACCEPT MY <a target="_blank" href="policy.html">PRIVACY POLICY?</a></p>
+            <br>
+        </div>
+        <div id="areYouSureText">
+            <p>DO YOU KNOW WHAT YOU AGREED TO?</p>
+        </div>
+
+        <div id="collectedTimeText" >
+            Did you know that when you came onto the site, I took a little bit of your data and stored it in a cookie?
+        </div>
+    </div>
+
+    <!-- main scrolling part of the documentary -->
+    <div class="docMain">
+
+        <div class="down-arrow"></div>
+
+        <div class="section" id="section1">
+            <div class="iso-paragraph">
+                <p>In the privacy policy at the beginning, which you agreed to, you allowed for cookies to be collected.</p>
+              </div>
+            <div class="sticky-section" id="section1">
+                  <div class="sticky-paragraph paragraph-header">
+                    <h3>WHAT ARE COOKIES? <br>ARE THEY BAD?</h3>
+                    <img src="img/fortune2.png" alt="" id="fortuneCookie2">
+                  </div>
+                  <div class="sticky-paragraph">
+                    <p>No, cookies are not necessarily "bad". Cookies are small strings of data that are stored directly in the browser. They are used to monitor your browsing activity and remember certain information about you — like what’s in your shopping cart, or your login information. Often, they are considered helpful and a necessary part to run many websites. </p>
+                </div>
+                <div class="sticky-paragraph">
+                    <p>A few years ago, the GDPR privacy law went into effect in Europe, which led to companies all over the world adding a cookie pop-up to their website, just to be on the safe side. That's why almost every website has a pop-up asking if you'll accept their use of cookies, which many of us approve without thinking.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="section" id="section2">
+            <div class="sticky-section">
+                <div id="animationFortune1">
+                    <img src="img/fortunetext.png" alt="" id="fortuneCookieText">
+                    <img src="img/fortune1-2.png" alt="" id="fortuneCookie1-2">
+                    <img src="img/fortune1-1.png" alt="" id="fortuneCookie1-1">
+                </div>
+            </div>
+        </div>
+    
+       
+               
+        <div class="section bufferText">
+            <img src="img/fortune4.png" alt="" id="fortuneCookie4">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph">
+                    <p>There are first-party cookies that are placed by the site you visit, and then there are third-party cookies, such as those placed by advertisers to see what you’re interested in and in turn serve you ads — even when you leave the original site you visited.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bufferText">
+            <img src="img/fortune4.png" alt="" id="fortuneCookie5">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph">
+                    <p><b>First-party cookies </b>are created by the domain the user is visiting. These cookies are generally considered good and helpful, as they are used to help provide a better user experience. They remember pieces of information such as your username and passwords and language preferences.</p>
+                    <p id="bottom-border"></p>
+                    <p><b>Third-party cookies</b> are those created by domains other than the one the user is currently visiting. They are mainly used for tracking and online advertising purposes. Third-party cookies are often used to create more targeted ads, which can sometimes feel creepy but also could be considered helpful to some users.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bufferText">
+            <img src="img/fortune4.png" alt="" id="fortuneCookie4">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph">
+                    <h4>If you want to check what cookies the website you are browsing has collected, you can right click to "Inspect", then either go to the <i>Applications</i> tab (Chrome) or <i>Storage</i> (Safari), where you'll be able to see the cookies listed with the data they contain. <br><br> <i> Try it out, check what cookies this website has stored!</i></h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bufferText">
+            <img src="img/fortune4.png" alt="" id="fortuneCookie5">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph">
+                    <p>While third-party cookies are not inherently harmful, they do track your browsing habits across websites. This has the potential to create privacy and security risks through the creation of detailed user profiles, or the malicious theft of personal information. User information gained through illegitimate means is also often sold to other third parties, multiplying the problem further.
+                    <p>A cookie cannot retrieve any other data from the user’s hard drive or transmit computer viruses or acquire email addresses. Each cookie is unique to the user’s web browser. Cookies themselves are not unsafe or “bad” — they vary in type of data collected across websites and it is up to the user’s privacy preferences for what to allow.</p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="section bufferText">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph">
+                    <h4>Third-party cookies can be blocked in the settings of most browsers under <i>“Privacy & Security”</i>, though several already block them automatically (such as Safari). Using <i>private or incognito modes</i> to browse the web is another way to prevent the use of third-party cookies.</h4>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="section bufferText">
+            <img src="img/fortune3.png" alt="" id="fortuneCookie3">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph paragraph-header">
+                    <h3>HOW DO I KNOW WHAT <br>DATA A WEBSITE MAY BE COLLECTING?</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bufferText">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph">
+                    <p>Part of the fear and concern surrounding cookies and browsing privacy is that they are not widely understood. It sounds scary to think of websites storing little pieces of our data, but upon entering most websites, we are prompted with an annoying little pop-up asking the question:</p>
+                    <h4>"CAN WE USE COOKIES? READ OUR PRIVACY POLICY!"</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="section bufferText">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph">
+               <p>These often block our view of the rest of the page and we see them so often that many of us will just click "accept" to be done with it. Do we ever actually read those privacy policies, though?</p>
+                <p>As shown previously, you can specifically check on cookies in your browser, but privacy policies are the best way to get a sense of what a website may be doing with your data and information. </p>
+                <p>Take <a href="policy.html" target="_blank">this website's privacy policy</a> as an example. You had probably just clicked accept without reading it, right?</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="sticky-section ">
+                <div class="sticky-paragraph">
+                    <p>Last year, Pew Research Center conducted a survey of U.S. adults about data privacy. One of their questions was about how often people clicked “accept” on privacy policies without reading them. The results were that nearly <a href="https://www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/" target="_blank">6 in 10</a> Americans frequently skip reading privacy policies.                    </p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img src="img/cookiedata.png" alt="" id="cookieDataDiagram">
+            </div>
+        </div>
+
+        <div class="section bufferText" id="paddingTop">
+            <div class="sticky-section bufferTextInner">
+                <div class="sticky-paragraph">
+                    <p>Not reading privacy policies is something we all do and often doesn't visibly affect our daily browsing activities. But by consenting to something without knowing what it is opens up the opportunity for a website to do whatever it wants.</p>
+                    <p><b>In this website, you've agreed to let your camera, microphone, and location data be used however I want. I also get to name your first-born child.</b></p>
+                    <p>Most websites probably wouldn't go so far with their policies, but it's important to be aware of how easy it is to agree to something risky, as well as what you agree to by browsing and participating in the web.</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="section bufferText">
+        <img src="img/fortune2.png" alt="" id="fortuneCookie6">
+        <div class="sticky-section bufferTextInner">
+            <div class="sticky-paragraph">
+                <p>Cookies are an often misunderstood bit of technology, but make a good segue into the larger conversation around data privacy on the modern web.</p> 
+                 <p>On one hand, users should be informed about what data companies are tracking when they visit a website. On the other hand, requiring them to simply click a big, bright "ACCEPT" without providing clear understanding of what they’re agreeing to doesn’t seem like an effective solution. It worsens the user experience without doing anything very meaningful in return.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bufferText">
+        <div class="sticky-section bufferTextInner">
+            <div class="sticky-paragraph">
+                <p>These conflicts around privacy policies, in addition to the constant push for us to accept cookies on every website we visit, highlight a deeper issue with how privacy and data collection are handled online.</p>
+                <p>Privacy-centered regulations, such as the GDPR, are increasing alongside our awareness of data privacy issues. The only fair way forward is by making the web more focused on openness, transparency and communicating directly to users, rather than on obscure methods of collecting their data without their knowledge or consent.</p>
+                <p>Hopefully, this experience gave you a little more knowledge about what cookies are, how they are used, and encouraged you to consider how you interact with the privacy of your data on the web.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section bufferText">
+        <div class="sticky-section bufferTextInner">
+            <div class="sticky-paragraph">
+                <h4>By the way, I've been populating the cookies on this site with jokes while you've been browsing. You should use what you learned to check it out! <br> <br>After all this, you deserve a cookie.</h4>
+                <img src="img/fortune2.png" alt="" id="fortuneCookieFinal">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Conclusion page with sources -->
+<div class="section conclusionBG">
+    <div class="sticky-section">
+            <h3 class="conclusionText">THANKS FOR PARTICIPATING!</h3>
+            <p class="conclusionText">Here are all the sources used in the creation of this project:</p>
+            <p class="citations">McClain, Colleen. “How Americans View Data Privacy.” <i>Pew Research Center</i>, 18 Oct. 2023, www.pewresearch.org/internet/2023/10/18/how-americans-view-data-privacy/.</p>
+            <p class="citations">Stewart, Emily. “Why Every Website Wants You to Accept Its Cookies.” <i>Vox</i>, 10 Dec. 2019, www.vox.com/recode/2019/12/10/18656519/what-are-cookies-website-tracking-gdpr-privacy.             </p>
+            <p class="citations">Sweeney, Mike. “What’s the Difference between First-Party and Third-Party Cookies?” <i>Clearcode</i>, 1 July 2024, clearcode.cc/blog/difference-between-first-party-third-party-cookies/.             </p>
+            <p class="citations">“What to Know about Internet Cookies.” <i>Get Cyber Safe</i>, Government of Canada, 1 Dec. 2022, www.getcybersafe.gc.ca/en/blogs/what-know-about-internet-cookies.             </p>
+    </div>
+</div>
+
+    <script src="sketch.js"></script>
+</body>
+</html>

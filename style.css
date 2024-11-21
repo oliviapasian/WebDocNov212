@@ -1,0 +1,490 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020d29;
+}
+
+/* custom scrolling (and removing x-scroll) */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #020d29;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fa4ef8;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #90008e;
+}
+
+/* Intro Panel */
+
+.introduction {
+  width: 100vw;
+  height: 100%;
+  z-index: 10;
+  background-color: #020d29;
+  position: absolute;
+  font-family: "barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+.introduction a {
+  color: #90008e;
+}
+
+.introduction a:hover {
+  color: #ffc0fe;
+}
+
+#buttonContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border: none;
+  background-color: #fa4ef8;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  z-index: 999;
+  font-size: 20px;
+}
+
+#buttonContainer p{
+  font-size: 20px;
+}
+
+#buttonContainer button:hover {
+  background-color: #fa4ef8;
+}
+
+.fadeout {
+  opacity: 0;
+  transition: opacity 2s ease-out;
+}
+
+#areYouSureText {
+  max-width: 50vw;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  opacity: 0%;
+  font-size: 30px;
+  z-index: 99;
+  color: #fa4ef8;
+}
+
+.fadeInOut {
+  animation: inOut 7s ease-in-out;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+
+@keyframes inOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#collectedTimeText {
+  color: white;
+  max-width: 50vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: none;
+  opacity: 0%;
+  font-size: large;
+  opacity: 0;
+  font-size: 30px;
+  z-index: 99;
+  color: #fa4ef8;
+}
+
+.fadeIn {
+  animation: fadeIn 9s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+/* General Formatting */
+
+* {
+  box-sizing: border-box;
+}
+
+.docMain {
+  min-height: 300vh;
+  padding: 60px 20px;
+}
+
+.section {
+  margin: 0 auto;
+  font-family: "barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  place-items: center;
+}
+
+.sticky-section {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  color: #fa4ef8;
+  margin-bottom: 100px;
+  max-height: 75vh;
+}
+
+.sticky-paragraph {
+  position: sticky;
+  top: 50px;
+  z-index: 2;
+  opacity: 1;
+  margin-bottom: 50px;
+}
+
+.paragraph-header{
+  margin-bottom: 30vh;
+
+}
+#paddingTop{
+  margin-top: 85vh;
+}
+
+.iso-paragraph {
+  margin-top: 100px;
+  margin-bottom: 42vh;
+  max-width: 800px;
+  position: relative;
+  color: #fa4ef8;
+}
+
+h3 {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.9vw;
+  padding: 30px;
+  border: #fa4ef8 2px solid;
+  border-radius: 25px;
+  margin-top: 10vh;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 1.9vw;
+  padding: 2px;
+}
+
+#section1{
+  margin-bottom: 200px;
+}
+
+.bufferText{
+  margin-top: 200px;
+  min-height: 120vh;
+}
+
+.bufferTextInner{
+  min-height: 130vh;
+}
+
+.section a{
+  color: #fa4ef8;
+}
+.section a:hover{
+  color: #90008e;
+}
+
+#bottom-border{
+  border-bottom: 2px #fa4ef8 solid;
+}
+
+/* Arrow from https://unused-css.com/blog/animated-down-arrow/ */
+.down-arrow {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 14px);
+  width: 0;
+  height: 35px;
+  border: 2px solid #fa4ef8;
+  border-radius: 2px;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid #fa4ef8;
+  border-right: 4px solid #fa4ef8;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: 20px;
+  }
+
+  100% {
+    margin-top: 0;
+  }
+}
+
+.down-arrow {
+  animation: jumpInfinite 3s infinite;
+}
+
+
+
+/* Images */
+
+#animationFortune1{
+  margin-top: 550px;
+  top: 80px;
+}
+
+img{
+  max-width: 900px;
+}
+
+#fortuneCookieText{
+  width: 850px;
+  left: -420px;
+  rotate: -5deg;
+  z-index: 3;
+}
+
+#fortuneCookie1-1{
+  width: 150px;
+  right: -145px;
+  margin-top: -140px;
+  z-index: 8;
+  position: absolute;
+  animation: moveLeft 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+#fortuneCookie1-2{
+  width: 180px;
+  left: -95px;
+  margin-top: -160px;
+  z-index: 8;
+  position: absolute;
+  animation: moveRight 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+
+#fortuneCookie2{
+  width: 200px;
+  position: absolute;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  position: absolute;
+  left: -250px;
+  margin-top: -170px;
+}
+
+#fortuneCookie3{
+  width: 280px;
+  position: absolute;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  position: absolute;
+  right: 200px;
+  margin-top: -150px;
+}
+#fortuneCookie4{
+  width: 220px;
+  position: absolute;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  position: absolute;
+  right: 60px;
+  margin-top: 450px;
+}
+#fortuneCookie5{
+  width: 250px;
+  position: absolute;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  position: absolute;
+  left: 60px;
+}
+
+#cookieDataDiagram{
+  width: 750px;
+  position: absolute;
+  z-index: 3;
+}
+
+#fortuneCookie6{
+  width: 250px;
+  position: absolute;
+  animation: rotate 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+  position: absolute;
+  left: 80px;
+  margin-top: 80px;
+}
+
+
+#fortuneCookieFinal{
+  width: 30px;
+  animation: scaleUp 1s linear infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -5s);
+  position: absolute;
+  right: 370px;
+  margin-top: 290px;
+  rotate: -27deg;
+  z-index: -10;
+}
+
+
+/* Image Animations */
+
+@keyframes moveLeft {
+  to {
+    transform: translateX(200px);
+  }
+}
+
+@keyframes moveRight {
+  to {
+    transform: translateX(-36vw);
+  }
+}
+/* Source for scroll animations: https://css-tricks.com/books/greatest-css-tricks/scroll-animation/ */
+@keyframes rotate {
+  to {
+    transform: rotate(720deg);
+  }
+}
+@keyframes scaleUp {
+  to {
+     scale: 2200%;
+  }
+}
+
+
+/* Conclusion/credits */
+
+.conclusionBG{
+  margin-top: -180px;
+  width: 100vw;
+  height: 100vw;
+  background-color: #fa4ef8;
+  color: #020d29;
+  position: relative;
+  z-index: 10;
+
+}
+
+.conclusionText{
+  font-family: "barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #020d29;
+  z-index: 11;
+  position: relative;
+  
+}
+
+.citations {
+  font-size: 1.4vw;
+  color: #020d29;
+  position: relative;
+  z-index: 11;
+} 
+
+
+/* Desktop-only alert */
+
+div.alert {
+  background-color: #fa4ef8;
+  font-family: "barlow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #020d29;
+  font-size: 5.5vw;
+  padding: 20px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+}
+
+@media screen and (min-width: 700px) {
+  div.alert {
+    display: none;
+  }
+}
